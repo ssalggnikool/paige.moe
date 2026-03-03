@@ -251,17 +251,6 @@ export default function (
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<title>/peɪd͡ʒ/</title>
 				<link rel="stylesheet" href="/iosevka-custom/import.css" />
-				<meta
-					content="/peɪd͡ʒ/"
-					/* @ts-ignore */
-					property="og:title"
-				/>
-				<meta
-					content="I occasionally write half-assed software."
-					/* @ts-ignore */
-					property="og:description"
-				/>
-				<meta content="#d3494e" name="theme-color"/>
 				<style>{styles}</style>
 			</head>
 			<body>
