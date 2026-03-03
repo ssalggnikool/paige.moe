@@ -4,8 +4,6 @@ const styles = `
 * {
 	appearance: none;
 	font-family: var(--font-primary);
-	scrollbar-color: var(--accent-300) transparent;
-	scrollbar-width: auto;
 }
 
 html {
@@ -35,6 +33,8 @@ html {
 	font-family: var(--font-primary);
 	background-color: var(--background-primary);
 	color: var(--foreground);
+
+	color-scheme: dark;
 }
 
 body {
