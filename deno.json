@@ -1,0 +1,25 @@
+{
+	"imports": {
+		"@july/snarl": "jsr:@july/snarl@^0.3.3",
+		"@std/path": "jsr:@std/path@^1.1.4"
+	},
+	"tasks": {
+		"dev": "deno run --env-file=.env -P --watch src/main.tsx"
+	},
+	"permissions": {
+		"default": {
+			"net": true,
+			"read": ["./static", "./src"],
+			"env": true
+		}
+	},
+	"fmt": {
+		"useTabs": true,
+		"semiColons": true
+	},
+	"compilerOptions": {
+		"jsx": "precompile",
+		"jsxImportSource": "@july/snarl",
+		"lib": ["deno.ns", "dom", "dom.iterable"]
+	}
+}

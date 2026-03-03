@@ -1,0 +1,71 @@
+@font-face {
+	font-family: "Iosevka Custom Web";
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	src: url("ttf/iosevka-custom-regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Iosevka Custom Web";
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: expanded;
+	font-style: normal;
+	src: url("ttf/iosevka-custom-extended.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Iosevka Custom Web";
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: italic;
+	src: url("ttf/iosevka-custom-italic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Iosevka Custom Web";
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: expanded;
+	font-style: italic;
+	src: url("ttf/iosevka-custom-extended-italic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Iosevka Custom Web";
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: normal;
+	src: url("ttf/iosevka-custom-bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Iosevka Custom Web";
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: expanded;
+	font-style: normal;
+	src: url("ttf/iosevka-custom-extended-bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Iosevka Custom Web";
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: normal;
+	font-style: italic;
+	src: url("ttf/iosevka-custom-bold-italic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Iosevka Custom Web";
+	font-display: swap;
+	font-weight: 700;
+	font-stretch: expanded;
+	font-style: italic;
+	src: url("ttf/iosevka-custom-extended-bold-italic.ttf") format("truetype");
+}
