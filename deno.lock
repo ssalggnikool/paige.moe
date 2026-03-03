@@ -29,8 +29,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@july/snarl@~0.3.3",
-      "jsr:@std/path@^1.1.4"
+      "jsr:@july/snarl@~0.3.3"
     ]
   }
 }
