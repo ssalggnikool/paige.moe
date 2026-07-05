@@ -1,6 +1,9 @@
 {
 	"imports": {
-		"@july/snarl": "jsr:@july/snarl@^0.3.4"
+		"@july/snarl": "jsr:@july/snarl@^1.0.2"
+	},
+	"minimumDependencyAge": {
+		"exclude": ["jsr:@july/snarl"]
 	},
 	"tasks": {
 		"dev": "deno run --env-file=.env -P --watch src/main.tsx",
@@ -18,7 +21,7 @@
 		"semiColons": true
 	},
 	"compilerOptions": {
-		"jsx": "precompile",
+		"jsx": "react-jsx",
 		"jsxImportSource": "@july/snarl",
 		"lib": ["deno.ns", "dom", "dom.iterable"]
 	}

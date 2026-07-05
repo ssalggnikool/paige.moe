@@ -10,17 +10,17 @@ import { FRIENDS, LINKS, MISC_PROJECTS, PROJECTS } from "./constants.ts";
 
 const getTrack: () => Promise<LastFM.Track | undefined> = async () => {
 	const params = new URLSearchParams({
-		"method": "user.getrecenttracks",
-		"user": "ohmaigotto",
-		"format": "json",
-		"api_key": Deno.env.get("LASTFM_TOKEN")!,
-		"limit": "1",
+		method: "user.getrecenttracks",
+		user: "ohmaigotto",
+		format: "json",
+		api_key: Deno.env.get("LASTFM_TOKEN")!,
+		limit: "1",
 	});
-	const track =
-		((await (await fetch(`https://ws.audioscrobbler.com/2.0/?${params}`))
-			.json()) as LastFM.RecentTracksResponse | null)?.recenttracks?.track?.at(
-				0,
-			);
+	const track = (
+		(await (
+			await fetch(`https://ws.audioscrobbler.com/2.0/?${params}`)
+		).json()) as LastFM.RecentTracksResponse | null
+	)?.recenttracks?.track?.at(0);
 	return track;
 };
 
@@ -32,21 +32,16 @@ router.use(
 router.get("/", async (ctx) => {
 	const track = await getTrack();
 	return ctx.html(
-		"<!DOCTYPE html>" + (
-			<MainLayout>
-				<h1>/peɪd͡ʒ/</h1>
-				<p>I occasionally write half-assed software.</p>
-				<NowPlaying track={track} />
-				<Projects projects={PROJECTS} />
-				<Projects
-					title="things i've worked on"
-					projects={MISC_PROJECTS}
-				/>
-				<Friends friends={FRIENDS} />
-				<Links links={LINKS} />
-				<Footer />
-			</MainLayout>
-		),
+		<MainLayout>
+			<h1>/peɪd͡ʒ/</h1>
+			<p>I occasionally write half-assed software.</p>
+			<NowPlaying track={track} />
+			<Projects projects={PROJECTS} />
+			<Projects title="things i've worked on" projects={MISC_PROJECTS} />
+			<Friends friends={FRIENDS} />
+			<Links links={LINKS} />
+			<Footer />
+		</MainLayout>,
 	);
 });
 
