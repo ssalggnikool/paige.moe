@@ -1,13 +1,14 @@
 {
 	"imports": {
+		"@404/imouto": "jsr:@404/imouto@^0.1.5",
 		"@july/snarl": "jsr:@july/snarl@^1.0.2"
 	},
 	"minimumDependencyAge": {
-		"exclude": ["jsr:@july/snarl"]
+		"exclude": ["jsr:@july/snarl", "jsr:@404/imouto", "jsr:@404/varnish"]
 	},
 	"tasks": {
-		"dev": "deno run --env-file=.env -P --watch src/main.tsx",
-		"prod": "deno run --env -P src/main.tsx"
+		"dev": "deno run --env-file=.env -P --watch src/mod.ts",
+		"prod": "deno run --env -P src/mod.ts"
 	},
 	"permissions": {
 		"default": {

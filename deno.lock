@@ -1,13 +1,32 @@
 {
   "version": "5",
   "specifiers": {
+    "jsr:@404/imouto@~0.1.5": "0.1.5",
+    "jsr:@404/varnish@~0.1.2": "0.1.2",
     "jsr:@july/snarl@^1.0.2": "1.0.2",
+    "jsr:@minify-html/deno@~0.18.1": "0.18.1",
     "jsr:@std/encoding@^1.0.11": "1.0.11",
     "jsr:@std/fmt@^1.0.10": "1.0.10",
     "jsr:@std/internal@^1.0.14": "1.0.14",
     "jsr:@std/path@^1.1.6": "1.1.6"
   },
   "jsr": {
+    "@404/imouto@0.1.5": {
+      "integrity": "4cd4362713a104d0a630f001386007ccb7b9a097933c80b853ff7454baee66db",
+      "dependencies": [
+        "jsr:@404/varnish",
+        "jsr:@july/snarl",
+        "jsr:@std/fmt",
+        "jsr:@std/path"
+      ]
+    },
+    "@404/varnish@0.1.2": {
+      "integrity": "76643603b967bb2937ae7b5efcd752d4247ab049a0a6c73af6677af93dd17aba",
+      "dependencies": [
+        "jsr:@july/snarl",
+        "jsr:@minify-html/deno"
+      ]
+    },
     "@july/snarl@1.0.2": {
       "integrity": "694871ec567284e816707d6250c1cb69ff0e3c9494895e6f60be74ff1037a5e2",
       "dependencies": [
@@ -15,6 +34,9 @@
         "jsr:@std/fmt",
         "jsr:@std/path"
       ]
+    },
+    "@minify-html/deno@0.18.1": {
+      "integrity": "1af76557adea9ee1e28759f653ec5a35e9c006e2abe73b65e4944aa821711ed1"
     },
     "@std/encoding@1.0.11": {
       "integrity": "e7cef2f0b3153bccc17431e7c864a1de03a4b6d9647389c43e08aaa775d37385"
@@ -34,6 +56,7 @@
   },
   "workspace": {
     "dependencies": [
+      "jsr:@404/imouto@~0.1.5",
       "jsr:@july/snarl@^1.0.2"
     ]
   }
