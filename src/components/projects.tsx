@@ -1,7 +1,7 @@
 import { Project } from "../types.ts";
 
 export default function (
-	{ projects, title = "projects" }: { projects: Project[]; title?: string },
+	{ projects, title }: { projects: Project[]; title?: string },
 ) {
 	const columns = 2;
 	const rows = [];

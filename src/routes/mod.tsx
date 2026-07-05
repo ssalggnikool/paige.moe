@@ -135,7 +135,7 @@ export default async () => {
 			<h1>/peɪd͡ʒ/</h1>
 			<p>meow</p>
 			<NowPlaying track={await getTrack()} />
-			<Projects projects={PROJECTS} />
+			<Projects title="main projects" projects={PROJECTS} />
 			<Projects title="other things i've worked on" projects={MISC_PROJECTS} />
 			<Friends friends={FRIENDS} />
 			<Links links={LINKS} />

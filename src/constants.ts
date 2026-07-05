@@ -2,7 +2,7 @@ import { Friend, Link, Project } from "./types.ts";
 
 export const LINKS: Link[] = [
 	{ title: "codeberg", href: "https://codeberg.org/paige" },
-	{ title: "github", href: "https://github.com/paigely" },
+	{ title: "github", href: "https://github.com/ssalggnikool" },
 	{ title: "last.fm", href: "https://www.last.fm/user/ohmaigotto" },
 ];
 
@@ -10,11 +10,54 @@ export const PROJECTS: Project[] = [
 	{
 		owner: "paige",
 		title: "Navic",
-		description:
-			"Navidrome client app for Android and iOS with Material 3 Expressive design",
-		href: "https://github.com/paigely/Navic",
+		description: "A modern Navidrome client for Android and iOS",
+		href: "https://github.com/ssalggnikool/Navic",
 		language: "Kotlin",
 		languageColor: "#6942cd",
+	},
+	{
+		owner: "paige",
+		title: "lynbar",
+		description: "Modern status bar for Linux written with iced-rs",
+		href: "https://codeberg.org/paige/lynbar",
+		language: "Rust",
+		languageColor: "#dea584",
+	},
+];
+
+export const MISC_PROJECTS: Project[] = [
+	{
+		owner: "claration",
+		title: "Impactor",
+		description:
+			"WIP feature rich iOS/tvOS sideloading application written in Rust.",
+		href: "https://github.com/claration/Impactor",
+		language: "Rust",
+		languageColor: "#dea584",
+	},
+	{
+		owner: "llsc12",
+		title: "Paicord",
+		description: "A native Discord client",
+		href: "https://github.com/llsc12/Paicord",
+		language: "Swift",
+		languageColor: "#f05138",
+	},
+	{
+		owner: "Vendicated",
+		title: "Vencord",
+		description: "The cutest Discord modification",
+		href: "https://github.com/Vendicated/Vencord",
+		language: "TypeScript",
+		languageColor: "#3178c6",
+	},
+	{
+		owner: "paige",
+		title: "Filecafe",
+		description: "File manager for jailbroken iOS >=14.0",
+		href: "https://github.com/paigely/Filecafe",
+		language: "Swift",
+		languageColor: "#f05138",
 	},
 	{
 		owner: "paige",
@@ -31,34 +74,6 @@ export const PROJECTS: Project[] = [
 		href: "https://github.com/paigely/RevertHUD",
 		language: "Swift",
 		languageColor: "#f05138",
-	},
-	{
-		owner: "paige",
-		title: "Filecafe",
-		description: "File manager for jailbroken iOS >=14.0",
-		href: "https://github.com/paigely/Filecafe",
-		language: "Swift",
-		languageColor: "#f05138",
-	},
-];
-
-export const MISC_PROJECTS: Project[] = [
-	{
-		owner: "claration",
-		title: "Impactor",
-		description:
-			"WIP feature rich iOS/tvOS sideloading application written in Rust.",
-		href: "https://github.com/claration/Impactor",
-		language: "Rust",
-		languageColor: "#dea584",
-	},
-	{
-		owner: "Vendicated",
-		title: "Vencord",
-		description: "The cutest Discord modification",
-		href: "https://github.com/Vendicated/Vencord",
-		language: "TypeScript",
-		languageColor: "#3178c6",
 	},
 ];
 
@@ -90,7 +105,7 @@ export const FRIENDS: Friend[] = [
 		title: "caitlyn",
 	},
 	{
-		href: "https://hhls.xyz",
+		href: "https://github.com/nekohaxx",
 		image: "/badges/nekohaxx.png",
 		title: "nekohaxx",
 	},
