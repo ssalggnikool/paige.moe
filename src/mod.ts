@@ -9,6 +9,8 @@ const router = await createRouter({
 
 router.serve();
 
+router.get("/src", (ctx) => ctx.redirect("https://github.com/ssalggnikool/paige.moe"));
+
 router.get("/88x31", (ctx) => ctx.redirect("/88x31.gif"));
 router.get("/88x31.png", (ctx) => ctx.redirect("/88x31.gif"));
 router.get("/88x31.webp", (ctx) => ctx.redirect("/88x31.gif"));
