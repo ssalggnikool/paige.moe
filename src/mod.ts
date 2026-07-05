@@ -8,3 +8,9 @@ const router = await createRouter({
 });
 
 router.serve();
+
+router.get("/88x31", (ctx) => ctx.redirect("/88x31.gif"));
+router.get("/88x31.png", (ctx) => ctx.redirect("/88x31.gif"));
+router.get("/88x31.webp", (ctx) => ctx.redirect("/88x31.gif"));
+router.get("/88x31.jpg", (ctx) => ctx.redirect("/88x31.gif"));
+router.get("/88x31.jpeg", (ctx) => ctx.redirect("/88x31.gif"));

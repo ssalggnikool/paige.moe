@@ -9,7 +9,7 @@ export default function () {
 					{" "}
 					&#x2022;{" "}
 					<a
-						href="https://github.com/paigely/maize.moe/blob/master/license.txt"
+						href="https://github.com/ssalggnikool/paige.moe/blob/master/license.txt"
 						target="_blank"
 					>
 						agplv3
