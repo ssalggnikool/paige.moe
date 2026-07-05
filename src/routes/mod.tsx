@@ -89,31 +89,6 @@ const Styled = css`
 		overflow: clip;
 	}
 
-	.project-card::after,
-	.lastfm-card::after {
-		content: "";
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: url("/pattern.png");
-		background-size: 5px 5px;
-		mix-blend-mode: overlay;
-		-webkit-mask-image: linear-gradient(transparent, #00000063);
-		mask-image: linear-gradient(transparent, #00000063);
-		image-rendering: -moz-crisp-edges;
-		image-rendering: pixelated;
-	}
-
-	.lastfm-card::after {
-		-moz-border-radius: ${theme.roundMedium};
-		-khtml-border-radius: ${theme.roundMedium};
-		-webkit-border-radius: ${theme.roundMedium};
-		border-radius: ${theme.roundMedium};
-	}
-
 	.project-title {
 		display: block;
 		padding-top: 16px;

@@ -18,7 +18,7 @@ export default function (
 						<tr>
 							{row.map((project) => (
 								<td>
-									<a class="card project-card" href={project.href} target="_blank">
+									<a class="card" href={project.href} target="_blank">
 										<div class="project-title">
 											<div class="project-title-left">
 												<b>{project.owner}</b>/{project.title}
