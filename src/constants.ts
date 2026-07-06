@@ -36,28 +36,12 @@ export const MISC_PROJECTS: Project[] = [
 		languageColor: "#dea584",
 	},
 	{
-		owner: "llsc12",
-		title: "Paicord",
-		description: "A native Discord client",
-		href: "https://github.com/llsc12/Paicord",
-		language: "Swift",
-		languageColor: "#f05138",
-	},
-	{
 		owner: "Vendicated",
 		title: "Vencord",
 		description: "The cutest Discord modification",
 		href: "https://github.com/Vendicated/Vencord",
 		language: "TypeScript",
 		languageColor: "#3178c6",
-	},
-	{
-		owner: "paige",
-		title: "Filecafe",
-		description: "File manager for jailbroken iOS >=14.0",
-		href: "https://github.com/paigely/Filecafe",
-		language: "Swift",
-		languageColor: "#f05138",
 	},
 ];
 
